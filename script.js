@@ -1,20 +1,32 @@
-let list = document.getElementById('list');
+let lists = document.querySelectorAll('.list');
 let rightBox = document.getElementById('right');
 let leftBox = document.getElementById('left');
+let selected = null;
 
-for (list of lists){
+lists.forEach(list => {
     list.addEventListener('dragstart', function(e) {
-        let selected = e.target;
+        selected = e.target;
+    });
+});
 
-        // Add the 'dragging' class to the selected item
-        rightBox.addEventListener('dragover', function(e) {
-            e.preventDefault();
-        });
+rightBox.addEventListener('dragover', function(e) {
+    e.preventDefault();
+});
 
-        rightBox.addEventListener('drop', function(e) {
-            rightBox.appendChild(selected);
-            selected = null;
-        });
-    })
-};
+rightBox.addEventListener('drop', function(e) {
+    if (selected) {
+        rightBox.appendChild(selected);
+        selected = null;
+    }
+});
 
+leftBox.addEventListener('dragover', function(e) {
+    e.preventDefault();
+});
+
+leftBox.addEventListener('drop', function(e) {
+    if (selected) {
+        leftBox.appendChild(selected);
+        selected = null;
+    }
+});
