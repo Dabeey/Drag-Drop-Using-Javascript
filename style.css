@@ -17,8 +17,27 @@
     width: 300px;
     min-height: 400px;
     margin: 20px;
-    border: 1px dashed #fff;
+    border: 2px dashed #fff;
+    border-radius: 15px;
+
     /* display: flex;
     justify-content: center;
     align-items: center; */
+}
+
+.list{
+    background: #e91e63;
+    color: #fff;
+    height: 60px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+.list img{
+    width: 10px;
+    margin-right: 15px;
+    margin-left: 20px;
+    six
 }
