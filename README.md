@@ -34,8 +34,4 @@ This project is a simple web app that demonstrates how to implement drag-and-dro
 - Change the look and feel by modifying `style.css`.
 
 
-Made with ❤️ using
-
-
-
-🚀 Built a simple Drag & Drop app using vanilla JavaScript! Move items between boxes with ease—no libraries needed. Check out the code and try it yourself! 🖱️✨ #JavaScript #WebDevelopment #DragAndDrop
+Made with ❤️ using JavaScript 
